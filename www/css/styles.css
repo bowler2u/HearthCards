@@ -1,0 +1,63 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+.navbar{
+    background-color: black;
+    color: white;
+}
+.toolbar{
+    background-color: black;
+    color: white;
+}
+
+.statusbar-overlay {
+    background: #000000;
+}
+.page-content{
+    background-image: url(https://pm1.narvii.com/6047/fc57998a7a5cfe66015675c94a22274bafca94af_hq.jpg);
+    background-repeat-y: repeat;
+    background-size: contain;
+    color:white;
+}
+.searchbar{
+    background: transparent;
+}
+.searchbar:after {
+    display: none;
+}
+
+.content-block {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+.mainContent{
+    /*background-image:url("https://i.imgur.com/tKvjkrD.jpg");*/
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+.card {
+    background: transparent;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    margin: 10px;
+    position: relative;
+    border-radius: 2px;
+    font-size: 14px;
+}
+.demo-card-header-pic .card-header {
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+  }
